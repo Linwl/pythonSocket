@@ -34,7 +34,7 @@ def Send(tcpCliSock):
                 break
             print data
         except Exception,e:
-            print "客户端错误",e.message
+            print "客户端接收错误",e
 
 def main():
     tcpCliSock=TcpConnect()
